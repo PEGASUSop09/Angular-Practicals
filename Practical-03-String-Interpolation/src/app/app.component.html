@@ -1,0 +1,20 @@
+<div class="card-container">
+  <div class="card">
+    <div class="badge">Practical 03</div>
+    <h1>{{ title }}</h1>
+    <hr />
+    
+    <div class="content">
+      <p class="greeting-user">Hello, <strong>{{ username }}</strong> 👋</p>
+      <p class="date-display">Today is: <span>{{ today | date:'fullDate' }}</span></p>
+      
+      <div class="message-box">
+        <p>{{ getGreeting() }}</p>
+      </div>
+
+      <div class="expression-box">
+        <p><strong>Evaluation Example:</strong> 2 + 3 = <span class="calc-result">{{ 2 + 3 }}</span></p>
+      </div>
+    </div>
+  </div>
+</div>
