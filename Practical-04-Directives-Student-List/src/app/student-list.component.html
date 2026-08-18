@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <h2>🎓 List of Registered Students</h2>
+      <span class="count-pill">Total: {{ studentNames.length }} Students</span>
+    </div>
+    
+    <ul class="student-list">
+      <li *ngFor="let name of studentNames; let i = index" class="student-item">
+        <span class="index-badge">#{{ i + 1 }}</span>
+        <span class="student-name">{{ name }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
