@@ -1,0 +1,78 @@
+.timetable-container {
+  padding: 40px 20px;
+  background: #f8fafc;
+  min-height: 85vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  max-width: 950px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h2 {
+  font-size: 1.6rem;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+}
+
+.header p {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.styled-table thead tr {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+}
+
+.day-cell {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.subject-tag {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #dbeafe;
+}
