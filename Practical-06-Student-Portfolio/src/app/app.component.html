@@ -1,0 +1,51 @@
+<div class="portfolio-container">
+  <!-- Profile Header -->
+  <header class="portfolio-header">
+    <div class="avatar-circle">{{ student.name.charAt(0) }}</div>
+    <h1>{{ student.name }}</h1>
+    <h3 class="subtitle">{{ student.title }}</h3>
+  </header>
+
+  <!-- About Me -->
+  <section class="card section-bio">
+    <h2>👤 About Me</h2>
+    <p>{{ student.bio }}</p>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="card section-skills">
+    <h2>⚡ Technical Skills</h2>
+    <div class="skills-wrapper">
+      <span *ngFor="let skill of student.skills" class="skill-badge">{{ skill }}</span>
+    </div>
+  </section>
+
+  <!-- Projects Showcase -->
+  <section class="card section-projects">
+    <h2>🚀 Academic & Personal Projects</h2>
+    <div class="projects-grid">
+      <div *ngFor="let project of student.projects" class="project-card">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        <a [href]="project.link" target="_blank" rel="noopener noreferrer" class="project-btn">
+          View Repository →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="card section-contact">
+    <h2>📫 Contact Information</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <strong>Email:</strong>
+        <a [href]="'mailto:' + student.contact.email">{{ student.contact.email }}</a>
+      </div>
+      <div class="contact-item">
+        <strong>GitHub:</strong>
+        <a [href]="student.contact.github" target="_blank">{{ student.contact.github }}</a>
+      </div>
+    </div>
+  </section>
+</div>

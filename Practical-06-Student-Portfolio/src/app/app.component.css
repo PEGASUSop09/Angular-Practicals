@@ -1,0 +1,129 @@
+.portfolio-container {
+  max-width: 860px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avatar-circle {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.portfolio-header h1 {
+  font-size: 2.2rem;
+  margin: 0 0 4px 0;
+  color: #0f172a;
+}
+
+.subtitle {
+  color: #2563eb;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin: 0 0 14px 0;
+  color: #0f172a;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 8px;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badge {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #bfdbfe;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+  color: #1e293b;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 14px 0;
+  line-height: 1.4;
+}
+
+.project-btn {
+  font-size: 0.85rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-btn:hover {
+  text-decoration: underline;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.contact-item {
+  font-size: 0.95rem;
+}
+
+.contact-item a {
+  color: #2563eb;
+  text-decoration: none;
+  margin-left: 6px;
+}
