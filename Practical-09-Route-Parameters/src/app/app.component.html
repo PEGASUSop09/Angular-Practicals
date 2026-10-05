@@ -1,0 +1,19 @@
+<div class="layout">
+  <div class="card">
+    <h2>🔗 {{ title }}</h2>
+    <p class="desc">Click on any user link to observe parameter capture via <code>ActivatedRoute</code>:</p>
+    
+    <nav class="nav-links">
+      <a routerLink="/home" routerLinkActive="active" class="link-btn">Home</a>
+      <a routerLink="/user/101" routerLinkActive="active" class="link-btn">User #101</a>
+      <a routerLink="/user/202" routerLinkActive="active" class="link-btn">User #202</a>
+      <a routerLink="/user/303" routerLinkActive="active" class="link-btn">User #303</a>
+    </nav>
+
+    <hr />
+
+    <div class="outlet-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
