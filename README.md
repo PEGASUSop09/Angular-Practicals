@@ -60,7 +60,3 @@
    http://localhost:4200
    ```
 
----
-
-## 📜 Academic Integrity Declaration
-I hereby declare that this repository and the code contained herein represent my own original practical work completed under the guidance of our course instructor. No `node_modules` or bulky build artifacts are committed, adhering to professional version control best practices.
